@@ -3,13 +3,16 @@
 // import { db } from "../pages/api/firebase";
 import ApiMap from "../components/ApiMap";
 import { Search } from "../components/Search";
+import { VenueList } from "@/components/VenueList";
 
 export default function Home() {
   return (
-    <div>
-      hello world, hola mundo
+    <div className="flex-col">
       <Search />
-      <ApiMap />
+      <div className="flex-row">
+        <VenueList />
+        <ApiMap />
+      </div>
     </div>
   );
 }
