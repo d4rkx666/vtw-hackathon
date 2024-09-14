@@ -6,9 +6,12 @@ import {
   Container,
   Typography,
 } from "@mui/material";
-import venues from "../data/venues.json";
 
-export const VenueList = () => {
+type Props = {
+  venues: any;
+};
+
+export const VenueList = ({ venues }: Props) => {
   return (
     <Box>
       <Container maxWidth="sm">
