@@ -1,3 +1,4 @@
+import { venueType } from "@/types/venueType";
 import {
   Box,
   Card,
@@ -8,7 +9,7 @@ import {
 } from "@mui/material";
 
 type Props = {
-  venues: any;
+  venues: venueType[];
 };
 
 export const VenueList = ({ venues }: Props) => {
