@@ -30,77 +30,60 @@ const eventsTypes: string[] = [
   "Community Event",
 ];
 
-export function Search() {
-  const [venues, setVenues] = useState(data);
-  const [eventsType, setEventsType] = useState("");
-  const [placeType, setPlaceType] = useState("");
+type Props = {
+  onSearchVenues: (e: any) => void;
+  onFilterEventsType: (e: any) => void;
+  onFilterPlaceType: (e: any) => void;
+  eventsType: string;
+  placeType: string;
+};
 
-  function onSearchVenues(e: any) {
-    if (!e.target.value) return setVenues(data);
-
-    const filteredVenues = venues.filter((venue) => {
-      return venue.name.toLowerCase().includes(e.target.value);
-    });
-
-    setVenues(filteredVenues);
-  }
-
-  function onFilterVenues(e: any) {
-    setVenues(data);
-    setEventsType(e.target.value);
-    if (e.target.value === "All") return;
-
-    console.log(" e.target.value: ", e.target.value);
-    const filteredVenues = data.filter((venue) => {
-      return venue.eventsType.includes(e.target.value);
-    });
-
-    setVenues(filteredVenues);
-  }
-
-  console.log("venues: ", venues);
+export function Search({
+  onSearchVenues,
+  onFilterEventsType,
+  onFilterPlaceType,
+  eventsType,
+  placeType,
+}: Props) {
   return (
     <div>
       <TextField onChange={(e) => onSearchVenues(e)} />
-      <FormControl fullWidth>
-        <InputLabel id="eventsType">Event Type</InputLabel>
-        <Select
-          labelId="eventsType"
-          value={eventsType}
-          label="Event Type"
-          onChange={onFilterVenues}
-        >
-          {eventsTypes.map((type) => {
-            return (
-              <MenuItem key={type} value={type}>
-                {type}
-              </MenuItem>
-            );
-          })}
-        </Select>
-      </FormControl>
-      <FormControl fullWidth>
-        <InputLabel id="eventsType">Place Type</InputLabel>
-        <Select
-          labelId="eventsType"
-          value={placeType}
-          label="Event Type"
-          onChange={onFilterVenues}
-        >
-          {placeTypes.map((type) => {
-            return (
-              <MenuItem key={type} value={type}>
-                {type}
-              </MenuItem>
-            );
-          })}
-        </Select>
-      </FormControl>
-      <ul>
-        {venues.map((venue) => {
-          return <li key={venue.id}>{venue.name}</li>;
-        })}
-      </ul>
+      <div className="flex flex-row">
+        <FormControl fullWidth>
+          <InputLabel id="eventsType">Event Type</InputLabel>
+          <Select
+            labelId="eventsType"
+            value={eventsType}
+            label="Event Type"
+            onChange={onFilterEventsType}
+          >
+            {eventsTypes.map((type) => {
+              return (
+                <MenuItem key={type} value={type}>
+                  {type}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
+        <FormControl fullWidth>
+          <InputLabel id="placeType">Place Type</InputLabel>
+          <Select
+            labelId="placeType"
+            value={placeType}
+            label="Place Type"
+            onChange={onFilterPlaceType}
+          >
+            {placeTypes.map((type) => {
+              return (
+                <MenuItem key={type} value={type}>
+                  {type}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
+      </div>
     </div>
   );
 }
