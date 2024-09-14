@@ -1,5 +1,4 @@
 export type venueType ={
-  map(arg0: (venue: any) => import("react").JSX.Element): import("react").ReactNode;
   id: string;
   name: string;
   capacity: number;
