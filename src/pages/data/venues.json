@@ -1,0 +1,167 @@
+[
+  {
+    "id": "1",
+    "name": "Vancouver Convention Centre",
+    "capacity": 10000,
+    "latitude": "49.2891",
+    "longitude": "-123.1162",
+    "contact": "604-123-4567",
+    "placeType": ["Convention Center"],
+    "eventsType": ["Conference", "Exhibition", "Trade Show"],
+    "address": "1055 Canada Pl, Vancouver, BC V6C 0C3"
+  },
+  {
+    "id": "2",
+    "name": "Queen Elizabeth Theatre",
+    "capacity": 2800,
+    "latitude": "49.2797",
+    "longitude": "-123.1122",
+    "contact": "604-123-7890",
+    "placeType": ["Theatre"],
+    "eventsType": ["Concert", "Theater", "Dance Performance"],
+    "address": "630 Hamilton St, Vancouver, BC V6B 5N6"
+  },
+  {
+    "id": "3",
+    "name": "Rogers Arena",
+    "capacity": 18810,
+    "latitude": "49.2775",
+    "longitude": "-123.1080",
+    "contact": "604-555-0123",
+    "placeType": ["Stadium"],
+    "eventsType": ["Sports", "Concert", "Exhibition"],
+    "address": "800 Griffiths Way, Vancouver, BC V6B 6G1"
+  },
+  {
+    "id": "4",
+    "name": "Orpheum Theatre",
+    "capacity": 2780,
+    "latitude": "49.2796",
+    "longitude": "-123.1215",
+    "contact": "604-555-5678",
+    "placeType": ["Theatre"],
+    "eventsType": ["Concert", "Theater", "Opera"],
+    "address": "601 Smithe St, Vancouver, BC V6B 3L4"
+  },
+  {
+    "id": "5",
+    "name": "Pacific Coliseum",
+    "capacity": 16481,
+    "latitude": "49.2827",
+    "longitude": "-123.0453",
+    "contact": "604-555-0987",
+    "placeType": ["Arena"],
+    "eventsType": ["Sports", "Concert", "Trade Show"],
+    "address": "100 N Renfrew St, Vancouver, BC V5K 3N7"
+  },
+  {
+    "id": "6",
+    "name": "BC Place Stadium",
+    "capacity": 54320,
+    "latitude": "49.2768",
+    "longitude": "-123.1115",
+    "contact": "604-555-8765",
+    "placeType": ["Stadium"],
+    "eventsType": ["Sports", "Concert", "Exhibition"],
+    "address": "777 Pacific Blvd, Vancouver, BC V6B 4Y8"
+  },
+  {
+    "id": "7",
+    "name": "Chan Centre for the Performing Arts",
+    "capacity": 1185,
+    "latitude": "49.2693",
+    "longitude": "-123.2532",
+    "contact": "604-822-2697",
+    "placeType": ["Theatre"],
+    "eventsType": ["Concert", "Theater", "Lecture"],
+    "address": "6265 Crescent Rd, Vancouver, BC V6T 1Z1"
+  },
+  {
+    "id": "8",
+    "name": "Science World",
+    "capacity": 500,
+    "latitude": "49.2734",
+    "longitude": "-123.1039",
+    "contact": "604-443-7440",
+    "placeType": ["Museum", "Exhibition Hall"],
+    "eventsType": ["Exhibition", "Educational", "Corporate Event"],
+    "address": "1455 Quebec St, Vancouver, BC V6A 3Z7"
+  },
+  {
+    "id": "9",
+    "name": "PNE Forum",
+    "capacity": 4000,
+    "latitude": "49.2822",
+    "longitude": "-123.0368",
+    "contact": "604-253-2311",
+    "placeType": ["Exhibition Hall"],
+    "eventsType": ["Trade Show", "Exhibition", "Concert"],
+    "address": "2901 E Hastings St, Vancouver, BC V5K 5J1"
+  },
+  {
+    "id": "10",
+    "name": "Vancouver Playhouse",
+    "capacity": 668,
+    "latitude": "49.2821",
+    "longitude": "-123.1085",
+    "contact": "604-665-3050",
+    "placeType": ["Theatre"],
+    "eventsType": ["Theater", "Concert", "Lecture"],
+    "address": "600 Hamilton St, Vancouver, BC V6B 2P1"
+  },
+  {
+    "id": "11",
+    "name": "UBC Robson Square",
+    "capacity": 300,
+    "latitude": "49.2827",
+    "longitude": "-123.1213",
+    "contact": "604-822-3333",
+    "placeType": ["Conference Center"],
+    "eventsType": ["Conference", "Seminar", "Workshop"],
+    "address": "800 Robson St, Vancouver, BC V6Z 3B7"
+  },
+  {
+    "id": "12",
+    "name": "Granville Island Stage",
+    "capacity": 440,
+    "latitude": "49.2713",
+    "longitude": "-123.1345",
+    "contact": "604-687-1644",
+    "placeType": ["Theatre"],
+    "eventsType": ["Theater", "Concert", "Comedy Show"],
+    "address": "1585 Johnston St, Vancouver, BC V6H 3R9"
+  },
+  {
+    "id": "13",
+    "name": "The Commodore Ballroom",
+    "capacity": 990,
+    "latitude": "49.2807",
+    "longitude": "-123.1203",
+    "contact": "604-739-4550",
+    "placeType": ["Concert Hall"],
+    "eventsType": ["Concert", "Dance", "Corporate Event"],
+    "address": "868 Granville St, Vancouver, BC V6Z 1K3"
+  },
+  {
+    "id": "14",
+    "name": "Vancouver Art Gallery",
+    "capacity": 200,
+    "latitude": "49.2829",
+    "longitude": "-123.1207",
+    "contact": "604-662-4700",
+    "placeType": ["Museum"],
+    "eventsType": ["Exhibition", "Art Show", "Corporate Event"],
+    "address": "750 Hornby St, Vancouver, BC V6Z 2H7"
+  },
+  {
+    "id": "15",
+    "name": "Roundhouse Community Arts & Recreation Centre",
+    "capacity": 250,
+    "latitude": "49.2736",
+    "longitude": "-123.1216",
+    "contact": "604-713-1800",
+    "placeType": ["Community Center"],
+    "eventsType": ["Workshop", "Exhibition", "Community Event"],
+    "address": "181 Roundhouse Mews, Vancouver, BC V6Z 2W3"
+  }
+]
