@@ -1,9 +1,12 @@
-import { useLoadScript, GoogleMap } from '@react-google-maps/api';
+import { useLoadScript, GoogleMap, MarkerF, InfoWindowF } from '@react-google-maps/api';
 import type { NextPage } from 'next';
 import React, { useMemo } from 'react';
+import Venues from '../data/venues.json'
+import Venue from '@/types/Venue';
 
 const ApiMap: NextPage = () => {
   const libraries = useMemo(() => ['places'], []);
+  const [selected, setSelected] = React.useState<Venue>();
 
   // This is the location of the hackathon event in Vancouver
   const mapCenter = useMemo(
@@ -34,16 +37,37 @@ const ApiMap: NextPage = () => {
 
 
   return (
-  <div>
     <GoogleMap
       options={mapOptions}
       zoom={14}
       center={mapCenter}
       mapTypeId={google.maps.MapTypeId.ROADMAP}
       mapContainerStyle={{ width: '500px', height: '500px' }}
-      onLoad={() => console.log('Map Component Loaded')} //we can do some actions after load
-    />
-  </div>
+      onLoad={() => console.log('Map Component Loaded')}>
+      
+      
+      {
+      Venues.map((ven, index) => (
+        <MarkerF
+          position={{ lat: Number(ven.latitude), lng: Number(ven.longitude) }}
+          onLoad={() => console.log('Marker Loaded')} 
+          onClick={()=> setSelected(ven)}
+          />
+      ))
+      }
+
+        {selected && (
+          <InfoWindowF
+            position={{ lat: Number(selected.latitude), lng: Number(selected.longitude) }}
+            onCloseClick={() => setSelected(undefined)}
+          >
+            <div>
+              <h2>{selected.name}</h2>
+              <p>{selected.address}</p>
+            </div>
+          </InfoWindowF>
+        )}
+    </GoogleMap>
   );
 };
 
