@@ -1,7 +1,7 @@
 import { EventHistory } from "@/components/EventHistory";
 import { Header } from "@/components/Header";
 import { venueType } from "@/types/venueType";
-import { Box, Button, Chip, Container, Typography } from "@mui/material";
+import { Box, Button, Chip, Container, Typography, Grid2 } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -37,7 +37,12 @@ export default function Detail() {
       />
       {venue && (
         <>
-          <Image src={venue.picture} alt="venue" width="912" height="320" />
+          <Grid2
+      container
+      justifyContent="center"
+      alignItems="center"
+    ><Image src={venue.picture} alt="venue" width="912" height="320" /></Grid2>
+          
           <Container sx={{ display: "flex", height: 226, pt: 2 }}>
             <Box sx={{width:480}}>
               <Box sx={{ display: "flex", pb:1 }}>
@@ -81,7 +86,7 @@ export default function Detail() {
               </Button>
             </Box>
             <Box>
-              <Image src={mapImage} alt="map" width="480" height="226"/>
+              <Image src={mapImage} alt="map" style={{width: "480", height: "226px"}}/>
             </Box>
           </Container>
           <Container>
