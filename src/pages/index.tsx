@@ -1,88 +1,93 @@
-import ApiMap from "../components/ApiMap";
-import { Filter } from "../components/Filter";
-import { VenueList } from "@/components/VenueList";
-import data from "../data/venues.json";
-import { useState } from "react";
-import { Header } from "@/components/Header";
+import GetVenues from "../data/GetVenues"
+import Bg from "../images/bg.jpg"
+import { FormControl, InputLabel, Typography, CardContent, Box, Grid2, Card, TextField, Select, MenuItem, IconButton, InputAdornment } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function Home() {
-  const [venues, setVenues] = useState(data);
-  const [eventsType, setEventsType] = useState("All");
-  const [placeType, setPlaceType] = useState("All");
-  const [searchKeyword, setSearchKeyword] = useState("");
-  const [searchAddress, setSearchAddress] = useState("");
-
-  function resetFilter() {
-    setVenues(data);
-    setEventsType("All");
-    setPlaceType("All");
-    setSearchKeyword("");
-  }
-
-  function onSearchVenues() {
-    let filteredVenues = data;
-    if (searchKeyword) {
-      filteredVenues = venues.filter((venue) => {
-        return venue.name.toLowerCase().includes(searchKeyword.toLowerCase());
-      });
-    }
-
-    if (searchAddress) {
-      filteredVenues = venues.filter((venue) => {
-        return venue.address
-          .toLowerCase()
-          .includes(searchAddress.toLowerCase());
-      });
-    }
-
-    setVenues(filteredVenues);
-  }
-
-  function onFilterEventsType(e: any) {
-    setVenues(data);
-    setEventsType(e.target.value);
-    if (e.target.value === "All") return;
-
-    const filteredVenues = data.filter((venue) => {
-      return venue.eventsType.includes(e.target.value);
-    });
-
-    setVenues(filteredVenues);
-  }
-
-  function onFilterPlaceType(e: any) {
-    setVenues(data);
-    setPlaceType(e.target.value);
-    if (e.target.value === "All") return;
-
-    console.log(" e.target.value: ", e.target.value);
-    const filteredVenues = data.filter((venue) => {
-      return venue.placeType.includes(e.target.value);
-    });
-
-    setVenues(filteredVenues);
-  }
 
   return (
-    <div className="flex flex-col">
-      <Header
-        searchAddress={searchAddress}
-        setSearchAddress={setSearchAddress}
-        onSearchVenues={onSearchVenues}
-        searchKeyword={searchKeyword}
-        setSearchKeyword={setSearchKeyword}
-      />
-      <Filter
-        onFilterEventsType={onFilterEventsType}
-        onFilterPlaceType={onFilterPlaceType}
-        eventsType={eventsType}
-        placeType={placeType}
-        resetFilter={resetFilter}
-      />
-      <div className="flex flex-row">
-        <VenueList venues={venues} />
-        <ApiMap venues={venues} />
-      </div>
-    </div>
+    <Grid2
+      container
+      justifyContent="center"
+      alignItems="center"
+      style={{
+        minHeight: "100vh",
+        backgroundImage: `url(${Bg.src})`, // Add background image
+        backgroundSize: "cover", // Cover the entire area
+        backgroundPosition: "center", // Center the image
+        backgroundRepeat: "no-repeat", // Prevent image repeat
+      }}
+    >
+      <Box sx={{ width: 900 }}>
+        <Card sx={{ p: 4, borderRadius: 5, backgroundColor: "rgba(255, 255, 255, 0.85)" }}> {/* Semi-transparent card */}
+          <CardContent>
+            <Typography variant="h5" component="div" textAlign="center" gutterBottom>
+              Find the Perfect Venue in Vancouver to launch your unforgettable Tech Event!
+            </Typography>
+            <br/>
+
+            {/* Search Form */}
+            <Box display="flex" justifyContent="center" gap={2}>
+              {/* Keyword Search */}
+
+              <TextField
+                variant="outlined"
+                placeholder="Venue name, address, etc..."
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <SearchIcon />
+                    </InputAdornment>
+                  ),
+                  sx: {
+                    borderRadius: "50px", // Fully rounded input
+                  }
+                }}
+                InputLabelProps={{
+                  shrink: true, // Keep label floating
+                }}
+                label="Keyword" // This is the helper label
+                sx={{ width: "300px" }}
+              />
+
+              {/* Area Dropdown */}
+              <FormControl variant="outlined" sx={{ width: "300px" }}>
+                <InputLabel shrink>Area</InputLabel>
+                <Select
+                  label="Area"
+                  defaultValue="Downtown Vancouver"
+                  sx={{
+                    borderRadius: "50px", // Fully rounded input
+                    "& .MuiOutlinedInput-root": {
+                      borderRadius: "50px", // Also apply to the inner Select component
+                    }
+                  }}
+                >
+                  <MenuItem value="Downtown Vancouver">Downtown Vancouver</MenuItem>
+                  <MenuItem value="West End">West End</MenuItem>
+                  <MenuItem value="Gastown">Gastown</MenuItem>
+                </Select>
+              </FormControl>
+
+              {/* Search Button */}
+              <IconButton
+                color="primary"
+                size="large"
+                sx={{
+                  backgroundColor: "#007BFF",
+                  color: "white",
+                  "&:hover": { backgroundColor: "#0056b3" },
+                  borderRadius: "50%", // Makes it a circle
+                  width: 56, // Set equal width and height for circular button
+                  height: 56,
+                }}
+              >
+                <SearchIcon />
+              </IconButton>
+            </Box>
+          </CardContent>
+        </Card>
+      </Box>
+    </Grid2>
   );
 }
