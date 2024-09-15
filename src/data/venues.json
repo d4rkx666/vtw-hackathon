@@ -9,6 +9,7 @@
     "placeType": ["Convention Center"],
     "eventsType": ["Conference", "Exhibition", "Trade Show"],
     "address": "1055 Canada Pl, Vancouver, BC V6C 0C3",
+    "price": 10,
     "histories": [
       {
         "eventName": "TED Conference",
@@ -36,6 +37,7 @@
     "placeType": ["Theatre"],
     "eventsType": ["Concert", "Theater", "Dance Performance"],
     "address": "630 Hamilton St, Vancouver, BC V6B 5N6",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver Opera: La Traviata",
@@ -63,6 +65,7 @@
     "placeType": ["Stadium"],
     "eventsType": ["Sports", "Concert", "Exhibition"],
     "address": "800 Griffiths Way, Vancouver, BC V6B 6G1",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver Canucks vs. Toronto Maple Leafs",
@@ -90,6 +93,7 @@
     "placeType": ["Theatre"],
     "eventsType": ["Concert", "Theater", "Opera"],
     "address": "601 Smithe St, Vancouver, BC V6B 3L4",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver Symphony Orchestra: Beethoven’s Ninth",
@@ -117,6 +121,7 @@
     "placeType": ["Arena"],
     "eventsType": ["Sports", "Concert", "Trade Show"],
     "address": "100 N Renfrew St, Vancouver, BC V5K 3N7",
+    "price": 10,
     "histories": [
       {
         "eventName": "PNE Summer Night Concerts",
@@ -144,6 +149,7 @@
     "placeType": ["Stadium"],
     "eventsType": ["Sports", "Concert", "Exhibition"],
     "address": "777 Pacific Blvd, Vancouver, BC V6B 4Y8",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver Whitecaps vs. Seattle Sounders",
@@ -171,6 +177,7 @@
     "placeType": ["Theatre"],
     "eventsType": ["Concert", "Theater", "Lecture"],
     "address": "6265 Crescent Rd, Vancouver, BC V6T 1Z1",
+    "price": 10,
     "histories": [
       {
         "eventName": "UBC Graduation Ceremony",
@@ -198,6 +205,7 @@
     "placeType": ["Museum", "Exhibition Hall"],
     "eventsType": ["Exhibition", "Educational", "Corporate Event"],
     "address": "1455 Quebec St, Vancouver, BC V6A 3Z7",
+    "price": 10,
     "histories": [
       {
         "eventName": "The Science of Pixar",
@@ -225,6 +233,7 @@
     "placeType": ["Exhibition Hall"],
     "eventsType": ["Trade Show", "Exhibition", "Concert"],
     "address": "2901 E Hastings St, Vancouver, BC V5K 5J1",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver Tattoo Show",
@@ -252,6 +261,7 @@
     "placeType": ["Theatre"],
     "eventsType": ["Theater", "Concert", "Lecture"],
     "address": "600 Hamilton St, Vancouver, BC V6B 2P1",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver International Film Festival",
@@ -279,6 +289,7 @@
     "placeType": ["Conference Center"],
     "eventsType": ["Conference", "Seminar", "Workshop"],
     "address": "800 Robson St, Vancouver, BC V6Z 3B7",
+    "price": 10,
     "histories": [
       {
         "eventName": "Techstars Startup Weekend Vancouver",
@@ -306,6 +317,7 @@
     "placeType": ["Theatre"],
     "eventsType": ["Theater", "Concert", "Comedy Show"],
     "address": "1585 Johnston St, Vancouver, BC V6H 3R9",
+    "price": 10,
     "histories": [
       {
         "eventName": "Arts Club Theatre Company: Kinky Boots",
@@ -333,6 +345,7 @@
     "placeType": ["Concert Hall"],
     "eventsType": ["Concert", "Dance", "Corporate Event"],
     "address": "868 Granville St, Vancouver, BC V6Z 1K3",
+    "price": 10,
     "histories": [
       {
         "eventName": "Tame Impala Concert",
@@ -360,6 +373,7 @@
     "placeType": ["Museum"],
     "eventsType": ["Exhibition", "Art Show", "Corporate Event"],
     "address": "750 Hornby St, Vancouver, BC V6Z 2H7",
+    "price": 10,
     "histories": [
       {
         "eventName": "Yoko Ono: Growing Freedom",
@@ -387,6 +401,7 @@
     "placeType": ["Community Center"],
     "eventsType": ["Workshop", "Exhibition", "Community Event"],
     "address": "181 Roundhouse Mews, Vancouver, BC V6Z 2W3",
+    "price": 10,
     "histories": [
       {
         "eventName": "Vancouver International Children's Festival",
