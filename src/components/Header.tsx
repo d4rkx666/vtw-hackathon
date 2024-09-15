@@ -24,7 +24,7 @@ export function Header({
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar color="transparent" position="static">
-        <div className="flex flex-row gap-2.5">
+        <div className="flex flex-row gap-2.5 pt-1">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               VanEventVenue.com
