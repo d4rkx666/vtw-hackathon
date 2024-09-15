@@ -1,7 +1,7 @@
-import GetVenues from "../data/GetVenues"
 import Bg from "../images/bg.jpg"
 import { FormControl, InputLabel, Typography, CardContent, Box, Grid2, Card, TextField, Select, MenuItem, IconButton, InputAdornment } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -70,20 +70,23 @@ export default function Home() {
               </FormControl>
 
               {/* Search Button */}
-              <IconButton
-                color="primary"
-                size="large"
-                sx={{
-                  backgroundColor: "#007BFF",
-                  color: "white",
-                  "&:hover": { backgroundColor: "#0056b3" },
-                  borderRadius: "50%", // Makes it a circle
-                  width: 56, // Set equal width and height for circular button
-                  height: 56,
-                }}
-              >
-                <SearchIcon />
-              </IconButton>
+              <Link href="/Filters">
+                <IconButton
+                  color="primary"
+                  size="large"
+                  sx={{
+                    backgroundColor: "#007BFF",
+                    color: "white",
+                    "&:hover": { backgroundColor: "#0056b3" },
+                    borderRadius: "50%", // Makes it a circle
+                    width: 56, // Set equal width and height for circular button
+                    height: 56,
+                  }}
+                >
+                  <SearchIcon />
+                </IconButton>
+              </Link>
+              
             </Box>
           </CardContent>
         </Card>
