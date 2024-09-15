@@ -22,7 +22,7 @@ export default function Home() {
         <Card sx={{ p: 4, borderRadius: 5, backgroundColor: "rgba(255, 255, 255, 0.85)" }}> {/* Semi-transparent card */}
           <CardContent>
             <Typography variant="h5" component="div" textAlign="center" gutterBottom>
-              Find the Perfect Venue in Vancouver to launch your unforgettable Tech Event!
+              Find the Perfect Venue in Vancouver<br/>to launch your unforgettable Tech Event!
             </Typography>
             <br/>
 
