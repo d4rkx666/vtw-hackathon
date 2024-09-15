@@ -83,4 +83,6 @@ export default function Home() {
         <VenueList venues={venues} />
         <ApiMap venues={venues} />
       </div>
-    </div>
+    </div>)
+
+  }
