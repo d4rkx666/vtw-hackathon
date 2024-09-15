@@ -1,20 +1,39 @@
 import ApiMap from "../components/ApiMap";
-import { Search } from "../components/Search";
+import { Filter } from "../components/Filter";
 import { VenueList } from "@/components/VenueList";
 import data from "../data/venues.json";
 import { useState } from "react";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   const [venues, setVenues] = useState(data);
-  const [eventsType, setEventsType] = useState("");
-  const [placeType, setPlaceType] = useState("");
+  const [eventsType, setEventsType] = useState("All");
+  const [placeType, setPlaceType] = useState("All");
+  const [searchKeyword, setSearchKeyword] = useState("");
+  const [searchAddress, setSearchAddress] = useState("");
 
-  function onSearchVenues(e: any) {
-    if (!e.target.value) return setVenues(data);
+  function resetFilter() {
+    setVenues(data);
+    setEventsType("All");
+    setPlaceType("All");
+    setSearchKeyword("");
+  }
 
-    const filteredVenues = venues.filter((venue) => {
-      return venue.name.toLowerCase().includes(e.target.value);
-    });
+  function onSearchVenues() {
+    let filteredVenues = data;
+    if (searchKeyword) {
+      filteredVenues = venues.filter((venue) => {
+        return venue.name.toLowerCase().includes(searchKeyword.toLowerCase());
+      });
+    }
+
+    if (searchAddress) {
+      filteredVenues = venues.filter((venue) => {
+        return venue.address
+          .toLowerCase()
+          .includes(searchAddress.toLowerCase());
+      });
+    }
 
     setVenues(filteredVenues);
   }
@@ -46,12 +65,19 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <Search
+      <Header
+        searchAddress={searchAddress}
+        setSearchAddress={setSearchAddress}
         onSearchVenues={onSearchVenues}
+        searchKeyword={searchKeyword}
+        setSearchKeyword={setSearchKeyword}
+      />
+      <Filter
         onFilterEventsType={onFilterEventsType}
         onFilterPlaceType={onFilterPlaceType}
         eventsType={eventsType}
         placeType={placeType}
+        resetFilter={resetFilter}
       />
       <div className="flex flex-row">
         <VenueList venues={venues} />
