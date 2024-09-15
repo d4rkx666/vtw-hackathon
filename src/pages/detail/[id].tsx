@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import venues from "../../data/venues.json";
 import { EventHistory } from "@/components/EventHistory";
 import Image from "next/image";
+import { Header } from "@/components/Header";
 
 export default function Detail() {
   const id = useRouter().query.id;
@@ -26,12 +27,19 @@ export default function Detail() {
 
   return (
     <div>
+      <Header
+        searchAddress={""}
+        setSearchAddress={() => {}}
+        onSearchVenues={() => {}}
+        searchKeyword={""}
+        setSearchKeyword={() => {}}
+      />
       {venue && (
         <>
           <Image src={venue.picture} alt="venue" width="912" height="320" />
           <Container sx={{ display: "flex", height: 226, pt: 2 }}>
-            <Box sx={{width:480}}>
-              <Box sx={{ display: "flex", pb:1 }}>
+            <Box sx={{ width: 480 }}>
+              <Box sx={{ display: "flex", pb: 1 }}>
                 {venue.placeType.map((type, index) => {
                   return (
                     <Chip
@@ -53,7 +61,14 @@ export default function Detail() {
                   );
                 })}
               </Box>
-              <Box sx={{ height: 126, display:"flex", flexDirection:"column", justifyContent:"center" }}>
+              <Box
+                sx={{
+                  height: 126,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
                 <div className="flex items-center justify-between">
                   <Typography variant="h4">{venue.name}</Typography>
                 </div>
@@ -67,7 +82,12 @@ export default function Detail() {
                   <Typography>{venue.capacity} person</Typography>
                 </Box>
               </Box>
-              <Button variant="contained" color="primary" size="medium" fullWidth>
+              <Button
+                variant="contained"
+                color="primary"
+                size="medium"
+                fullWidth
+              >
                 Contact
               </Button>
             </Box>
@@ -75,7 +95,7 @@ export default function Detail() {
           </Container>
           <Container>
             <Typography>Event history at this Venue:</Typography>
-            <EventHistory histories={venue.histories}/>
+            <EventHistory histories={venue.histories} />
           </Container>
         </>
       )}
