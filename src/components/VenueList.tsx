@@ -18,14 +18,14 @@ export const VenueList = ({ venues }: Props) => {
     <Box>
       <Container maxWidth="sm">
         <div>
-          {venues.map((venue) => {
+          {venues.map((venue: any) => {
             return (
               <div key={venue.id} className="my-3">
                 <Card>
                   <CardContent>
                     <Container>
                       <Box sx={{ display: "flex" }}>
-                        {venue.placeType.map((type, index) => {
+                        {venue.placeType.map((type: any, index: number) => {
                           return (
                             <Chip
                               key={index}
@@ -35,7 +35,7 @@ export const VenueList = ({ venues }: Props) => {
                             />
                           );
                         })}
-                        {venue.eventsType.map((type, index) => {
+                        {venue.eventsType.map((type: any, index: number) => {
                           return (
                             <Chip
                               key={index}
