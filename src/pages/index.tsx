@@ -1,11 +1,24 @@
 import Bg from "../images/bg.jpg"
+import Logo from "../images/logo.png"
 import { FormControl, InputLabel, Typography, CardContent, Box, Grid2, Card, TextField, Select, MenuItem, IconButton, InputAdornment } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Home() {
 
   return (
+    <div style={{backgroundColor: "white"}}>
+      <Image
+          src={Logo}
+          alt="Logo"
+          style={{
+            position: 'relative',
+            top: 0,
+            left: 0,
+            padding: 3, // Adjust padding as needed
+          }}
+        />
     <Grid2
       container
       justifyContent="center"
@@ -18,6 +31,7 @@ export default function Home() {
         backgroundRepeat: "no-repeat", // Prevent image repeat
       }}
     >
+        
       <Box sx={{ width: 900 }}>
         <Card sx={{ p: 4, borderRadius: 5, backgroundColor: "rgba(255, 255, 255, 0.85)" }}> {/* Semi-transparent card */}
           <CardContent>
@@ -92,5 +106,6 @@ export default function Home() {
         </Card>
       </Box>
     </Grid2>
+    </div>
   );
 }
