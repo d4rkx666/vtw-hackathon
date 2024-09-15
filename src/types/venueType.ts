@@ -1,4 +1,4 @@
-export type venueType ={
+export type venueType = {
   id: string;
   name: string;
   capacity: number;
@@ -9,11 +9,15 @@ export type venueType ={
   eventsType: string[];
   address: string;
   price: number;
-  histories: {
-      eventName: string;
-      eventOrganizer: string;
-      date: string;
-      eventType: string;
-      url: string;
-  }[];
-}
+  picture: string;
+  histories: EventHistoryType[];
+};
+
+export type EventHistoryType = {
+  eventName: string;
+  eventOrganizer: string;
+  date: string; // ISO date string
+  eventType: string;
+  url: string;
+  picture: string;
+};

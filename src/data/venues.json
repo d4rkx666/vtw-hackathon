@@ -10,20 +10,23 @@
     "eventsType": ["Conference", "Exhibition", "Trade Show"],
     "address": "1055 Canada Pl, Vancouver, BC V6C 0C3",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "TED Conference",
         "eventOrganizer": "TED",
         "date": "2023-04-10",
         "eventType": "Conference",
-        "url": "https://www.ted.com/attend/conferences/ted-conference"
+        "url": "https://www.ted.com/attend/conferences/ted-conference",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Vancouver International Auto Show",
         "eventOrganizer": "New Car Dealers Association of BC",
         "date": "2022-03-23",
         "eventType": "Exhibition",
-        "url": "https://vancouverinternationalautoshow.com"
+        "url": "https://vancouverinternationalautoshow.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -38,20 +41,23 @@
     "eventsType": ["Concert", "Theater", "Dance Performance"],
     "address": "630 Hamilton St, Vancouver, BC V6B 5N6",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver Opera: La Traviata",
         "eventOrganizer": "Vancouver Opera",
         "date": "2023-09-15",
         "eventType": "Opera",
-        "url": "https://www.vancouveropera.ca"
+        "url": "https://www.vancouveropera.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Broadway Across Canada: Hamilton",
         "eventOrganizer": "Broadway Across Canada",
         "date": "2022-05-02",
         "eventType": "Theater",
-        "url": "https://broadwayacrosscanada.ca"
+        "url": "https://broadwayacrosscanada.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -66,20 +72,23 @@
     "eventsType": ["Sports", "Concert", "Exhibition"],
     "address": "800 Griffiths Way, Vancouver, BC V6B 6G1",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver Canucks vs. Toronto Maple Leafs",
         "eventOrganizer": "NHL",
         "date": "2023-11-05",
         "eventType": "Sports",
-        "url": "https://www.nhl.com/canucks"
+        "url": "https://www.nhl.com/canucks",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Elton John Farewell Yellow Brick Road Tour",
         "eventOrganizer": "Elton John",
         "date": "2022-10-21",
         "eventType": "Concert",
-        "url": "https://www.eltonjohn.com"
+        "url": "https://www.eltonjohn.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -94,20 +103,23 @@
     "eventsType": ["Concert", "Theater", "Opera"],
     "address": "601 Smithe St, Vancouver, BC V6B 3L4",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver Symphony Orchestra: Beethoven’s Ninth",
         "eventOrganizer": "Vancouver Symphony Orchestra",
         "date": "2023-12-31",
         "eventType": "Concert",
-        "url": "https://www.vancouversymphony.ca"
+        "url": "https://www.vancouversymphony.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Comedy Night with Trevor Noah",
         "eventOrganizer": "Trevor Noah",
         "date": "2022-09-10",
         "eventType": "Comedy Show",
-        "url": "https://www.trevornoah.com"
+        "url": "https://www.trevornoah.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -122,20 +134,23 @@
     "eventsType": ["Sports", "Concert", "Trade Show"],
     "address": "100 N Renfrew St, Vancouver, BC V5K 3N7",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "PNE Summer Night Concerts",
         "eventOrganizer": "PNE",
         "date": "2023-08-25",
         "eventType": "Concert",
-        "url": "https://www.pne.ca/concerts"
+        "url": "https://www.pne.ca/concerts",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Vancouver Giants vs. Victoria Royals",
         "eventOrganizer": "WHL",
         "date": "2022-11-12",
         "eventType": "Sports",
-        "url": "https://vancouvergiants.com"
+        "url": "https://vancouvergiants.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -150,20 +165,23 @@
     "eventsType": ["Sports", "Concert", "Exhibition"],
     "address": "777 Pacific Blvd, Vancouver, BC V6B 4Y8",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver Whitecaps vs. Seattle Sounders",
         "eventOrganizer": "MLS",
         "date": "2023-07-08",
         "eventType": "Sports",
-        "url": "https://www.whitecapsfc.com"
+        "url": "https://www.whitecapsfc.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Ed Sheeran - Mathematics Tour",
         "eventOrganizer": "Ed Sheeran",
         "date": "2022-09-02",
         "eventType": "Concert",
-        "url": "https://www.edsheeran.com"
+        "url": "https://www.edsheeran.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -178,20 +196,23 @@
     "eventsType": ["Concert", "Theater", "Lecture"],
     "address": "6265 Crescent Rd, Vancouver, BC V6T 1Z1",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "UBC Graduation Ceremony",
         "eventOrganizer": "University of British Columbia",
         "date": "2023-05-24",
         "eventType": "Graduation",
-        "url": "https://graduation.ubc.ca"
+        "url": "https://graduation.ubc.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "David Suzuki: The Climate Crisis",
         "eventOrganizer": "David Suzuki Foundation",
         "date": "2022-04-14",
         "eventType": "Lecture",
-        "url": "https://davidsuzuki.org"
+        "url": "https://davidsuzuki.org",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -206,20 +227,23 @@
     "eventsType": ["Exhibition", "Educational", "Corporate Event"],
     "address": "1455 Quebec St, Vancouver, BC V6A 3Z7",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "The Science of Pixar",
         "eventOrganizer": "Science World",
         "date": "2023-06-15",
         "eventType": "Exhibition",
-        "url": "https://www.scienceworld.ca"
+        "url": "https://www.scienceworld.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "BC Tech Summit",
         "eventOrganizer": "BC Tech Association",
         "date": "2022-03-22",
         "eventType": "Conference",
-        "url": "https://wearebctech.com"
+        "url": "https://wearebctech.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -234,20 +258,23 @@
     "eventsType": ["Trade Show", "Exhibition", "Concert"],
     "address": "2901 E Hastings St, Vancouver, BC V5K 5J1",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver Tattoo Show",
         "eventOrganizer": "Vancouver Tattoo Convention",
         "date": "2023-04-15",
         "eventType": "Exhibition",
-        "url": "https://vancouvertattooshow.com"
+        "url": "https://vancouvertattooshow.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Vancouver Comic and Toy Show",
         "eventOrganizer": "Vancouver Comic Con",
         "date": "2022-10-30",
         "eventType": "Exhibition",
-        "url": "https://vancouvercomiccon.com"
+        "url": "https://vancouvercomiccon.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -262,20 +289,23 @@
     "eventsType": ["Theater", "Concert", "Lecture"],
     "address": "600 Hamilton St, Vancouver, BC V6B 2P1",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver International Film Festival",
         "eventOrganizer": "VIFF",
         "date": "2023-09-28",
         "eventType": "Film Festival",
-        "url": "https://viff.org"
+        "url": "https://viff.org",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "National Geographic Live: Nature Roars Back",
         "eventOrganizer": "National Geographic",
         "date": "2022-11-17",
         "eventType": "Lecture",
-        "url": "https://www.nationalgeographic.com/events"
+        "url": "https://www.nationalgeographic.com/events",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -290,20 +320,23 @@
     "eventsType": ["Conference", "Seminar", "Workshop"],
     "address": "800 Robson St, Vancouver, BC V6Z 3B7",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Techstars Startup Weekend Vancouver",
         "eventOrganizer": "Techstars",
         "date": "2023-03-03",
         "eventType": "Workshop",
-        "url": "https://startupweekend.org"
+        "url": "https://startupweekend.org",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "UBC Dialogues: Vancouver",
         "eventOrganizer": "UBC Alumni Association",
         "date": "2022-02-16",
         "eventType": "Seminar",
-        "url": "https://www.alumni.ubc.ca"
+        "url": "https://www.alumni.ubc.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -318,20 +351,23 @@
     "eventsType": ["Theater", "Concert", "Comedy Show"],
     "address": "1585 Johnston St, Vancouver, BC V6H 3R9",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Arts Club Theatre Company: Kinky Boots",
         "eventOrganizer": "Arts Club Theatre",
         "date": "2023-05-12",
         "eventType": "Theater",
-        "url": "https://artsclub.com"
+        "url": "https://artsclub.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Vancouver Fringe Festival",
         "eventOrganizer": "Vancouver Fringe",
         "date": "2022-09-08",
         "eventType": "Theater",
-        "url": "https://www.vancouverfringe.com"
+        "url": "https://www.vancouverfringe.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -346,20 +382,23 @@
     "eventsType": ["Concert", "Dance", "Corporate Event"],
     "address": "868 Granville St, Vancouver, BC V6Z 1K3",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Tame Impala Concert",
         "eventOrganizer": "Live Nation",
         "date": "2023-07-20",
         "eventType": "Concert",
-        "url": "https://www.livenation.com"
+        "url": "https://www.livenation.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Annual New Year's Eve Gala",
         "eventOrganizer": "Commodore Ballroom",
         "date": "2022-12-31",
         "eventType": "Dance",
-        "url": "https://www.commodoreballroom.com"
+        "url": "https://www.commodoreballroom.com",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -374,20 +413,23 @@
     "eventsType": ["Exhibition", "Art Show", "Corporate Event"],
     "address": "750 Hornby St, Vancouver, BC V6Z 2H7",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Yoko Ono: Growing Freedom",
         "eventOrganizer": "Vancouver Art Gallery",
         "date": "2023-10-02",
         "eventType": "Art Show",
-        "url": "https://www.vanartgallery.bc.ca"
+        "url": "https://www.vanartgallery.bc.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Takashi Murakami: The Octopus Eats Its Own Leg",
         "eventOrganizer": "Vancouver Art Gallery",
         "date": "2022-06-06",
         "eventType": "Exhibition",
-        "url": "https://www.vanartgallery.bc.ca"
+        "url": "https://www.vanartgallery.bc.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   },
@@ -402,20 +444,23 @@
     "eventsType": ["Workshop", "Exhibition", "Community Event"],
     "address": "181 Roundhouse Mews, Vancouver, BC V6Z 2W3",
     "price": 10,
+    "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020",
     "histories": [
       {
         "eventName": "Vancouver International Children's Festival",
         "eventOrganizer": "Children's Festival",
         "date": "2023-05-29",
         "eventType": "Community Event",
-        "url": "https://www.childrensfestival.ca"
+        "url": "https://www.childrensfestival.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       },
       {
         "eventName": "Make It Vancouver! Craft Fair",
         "eventOrganizer": "Make It Show",
         "date": "2022-11-24",
         "eventType": "Exhibition",
-        "url": "https://makeitshow.ca"
+        "url": "https://makeitshow.ca",
+        "picture": "https://lh3.googleusercontent.com/p/AF1QipOi6sp7hjHWyH7UPRvHniwMMQ7ePWxQkIyMf0X2=s1360-w1360-h1020"
       }
     ]
   }
