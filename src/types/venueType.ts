@@ -8,6 +8,7 @@ export type venueType ={
   placeType: string[];
   eventsType: string[];
   address: string;
+  price: number;
   histories: {
       eventName: string;
       eventOrganizer: string;

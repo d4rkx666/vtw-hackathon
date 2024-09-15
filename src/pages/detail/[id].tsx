@@ -12,7 +12,7 @@ export default function Detail() {
 
   const [venue, setVenue] = useState<venueType | null>(null);
   useEffect(() => {
-    if (id) {
+    if (id && id.length === 1) {
       const isVenue = venues.find((e) => e.id === id);
       if (isVenue) {
         setVenue(isVenue);
@@ -35,7 +35,7 @@ export default function Detail() {
                 <Scroll to="map"><Chip sx={{bgcolor: "limegreen"}} label="map" avatar={<ChevronRightIcon />} /></Scroll>
               </nav>
             </div>
-            
+
           </Container>
           <Box id="map">
             

@@ -1,6 +1,7 @@
 import { venueType } from "@/types/venueType";
 import {
   Box,
+  Button,
   Card,
   CardContent,
   Chip,
@@ -22,34 +23,51 @@ export const VenueList = ({ venues }: Props) => {
               <div key={venue.id} className="my-3">
                 <Card>
                   <CardContent>
-                    <Typography variant="h5">{venue.name}</Typography>
-                    <div>
-                      <div className="flex">
-                        <Typography sx={{ width: 80 }}>Capacity:</Typography>
-                        <Typography>{venue.capacity}</Typography>
-                      </div>
-                      <div className="flex">
-                        <Typography sx={{ width: 80 }}>Contact:</Typography>
-                        <Typography>{venue.contact}</Typography>
-                      </div>
-
-                      <div className="flex">
-                        <Typography sx={{ width: 80 }}>Place type:</Typography>
+                    <Container>
+                      <Box sx={{ display: "flex" }}>
                         {venue.placeType.map((type, index) => {
-                          return <Chip key={index} label={type} />;
+                          return (
+                            <Chip
+                              key={index}
+                              label={type}
+                              variant="outlined"
+                              sx={{ bgcolor: "#FFFDE7", mr: 1 }}
+                            />
+                          );
                         })}
-                      </div>
-                      <div className="flex">
-                        <Typography sx={{ width: 80 }}>Events type:</Typography>
                         {venue.eventsType.map((type, index) => {
-                          return <Chip key={index} label={type} />;
+                          return (
+                            <Chip
+                              key={index}
+                              label={type}
+                              variant="outlined"
+                              sx={{ bgcolor: "#E0F2F1", mr: 1 }}
+                            />
+                          );
                         })}
-                      </div>
-                      <div className="flex">
-                        <Typography sx={{ width: 80 }}>Address:</Typography>
-                        <Typography>{venue.address}</Typography>
-                      </div>
-                    </div>
+                      </Box>
+                      <Box sx={{ py: 2 }}>
+                        <Typography variant="h5">{venue.name}</Typography>
+                        <Typography variant="body1">{venue.address}</Typography>
+                        <Box sx={{ display: "flex" }}>
+                          <Typography sx={{ width: 110 }}>
+                            Price: ${venue.price} /h
+                          </Typography>
+                          <Typography sx={{ width: 10 }}>|</Typography>
+                          <Typography>
+                            Capacity: {venue.capacity} person
+                          </Typography>
+                        </Box>
+                      </Box>
+                      <Button
+                        variant="contained"
+                        color="primary"
+                        size="medium"
+                        href={`/detail/${venue.id}`}
+                      >
+                        READ MORE
+                      </Button>
+                    </Container>
                   </CardContent>
                 </Card>
               </div>
