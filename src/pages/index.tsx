@@ -1,4 +1,3 @@
-import ApiMap from "../components/ApiMap";
 import GetVenues from "../data/GetVenues"
 import Bg from "../images/bg.jpg"
 import { FormControl, InputLabel, Typography, CardContent, Box, Grid2, Card, TextField, Select, MenuItem, IconButton, InputAdornment } from "@mui/material";
