@@ -1,7 +1,7 @@
-import GetVenues from "../data/GetVenues"
 import Bg from "../images/bg.jpg"
 import { FormControl, InputLabel, Typography, CardContent, Box, Grid2, Card, TextField, Select, MenuItem, IconButton, InputAdornment } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -22,7 +22,7 @@ export default function Home() {
         <Card sx={{ p: 4, borderRadius: 5, backgroundColor: "rgba(255, 255, 255, 0.85)" }}> {/* Semi-transparent card */}
           <CardContent>
             <Typography variant="h5" component="div" textAlign="center" gutterBottom>
-              Find the Perfect Venue in Vancouver to launch your unforgettable Tech Event!
+              Find the Perfect Venue in Vancouver<br/>to launch your unforgettable Tech Event!
             </Typography>
             <br/>
 
@@ -70,20 +70,23 @@ export default function Home() {
               </FormControl>
 
               {/* Search Button */}
-              <IconButton
-                color="primary"
-                size="large"
-                sx={{
-                  backgroundColor: "#007BFF",
-                  color: "white",
-                  "&:hover": { backgroundColor: "#0056b3" },
-                  borderRadius: "50%", // Makes it a circle
-                  width: 56, // Set equal width and height for circular button
-                  height: 56,
-                }}
-              >
-                <SearchIcon />
-              </IconButton>
+              <Link href="/Filters">
+                <IconButton
+                  color="primary"
+                  size="large"
+                  sx={{
+                    backgroundColor: "#007BFF",
+                    color: "white",
+                    "&:hover": { backgroundColor: "#0056b3" },
+                    borderRadius: "50%", // Makes it a circle
+                    width: 56, // Set equal width and height for circular button
+                    height: 56,
+                  }}
+                >
+                  <SearchIcon />
+                </IconButton>
+              </Link>
+              
             </Box>
           </CardContent>
         </Card>
