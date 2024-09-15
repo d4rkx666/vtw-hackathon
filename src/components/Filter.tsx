@@ -1,12 +1,10 @@
-import TextField from "@mui/material/TextField";
-import data from "../data/venues.json";
-import { useState } from "react";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const placeTypes: string[] = [
+  "All",
   "Convention Center",
   "Theatre",
   "Stadium",
@@ -31,27 +29,32 @@ const eventsTypes: string[] = [
 ];
 
 type Props = {
-  onSearchVenues: (e: any) => void;
   onFilterEventsType: (e: any) => void;
   onFilterPlaceType: (e: any) => void;
   eventsType: string;
   placeType: string;
+  resetFilter: () => void;
 };
 
-export function Search({
-  onSearchVenues,
+export function Filter({
   onFilterEventsType,
   onFilterPlaceType,
   eventsType,
   placeType,
+  resetFilter,
 }: Props) {
   return (
     <div>
-      <TextField onChange={(e) => onSearchVenues(e)} />
-      <div className="flex flex-row">
-        <FormControl fullWidth>
+      <div className="flex flex-row gap-2.5 m-10 items-center">
+        <FormControl>
           <InputLabel id="eventsType">Event Type</InputLabel>
           <Select
+            className="w-48"
+            sx={{
+              borderRadius: "40px",
+              background: eventsType !== "All" ? "#2196F3" : "",
+              color: eventsType !== "All" ? "#fff" : "",
+            }}
             labelId="eventsType"
             value={eventsType}
             label="Event Type"
@@ -66,9 +69,15 @@ export function Search({
             })}
           </Select>
         </FormControl>
-        <FormControl fullWidth>
+        <FormControl>
           <InputLabel id="placeType">Place Type</InputLabel>
           <Select
+            className="w-48"
+            sx={{
+              borderRadius: "40px",
+              background: placeType !== "All" ? "#2196F3" : "",
+              color: placeType !== "All" ? "#fff" : "",
+            }}
             labelId="placeType"
             value={placeType}
             label="Place Type"
@@ -83,6 +92,10 @@ export function Search({
             })}
           </Select>
         </FormControl>
+
+        <span onClick={() => resetFilter()} style={{ color: "#E65100" }}>
+          Reset
+        </span>
       </div>
     </div>
   );
