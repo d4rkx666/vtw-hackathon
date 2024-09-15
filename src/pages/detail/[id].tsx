@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import venues from "../../data/venues.json";
+import mapImage from "../../images/map.png"
 
 
 export default function Detail() {
@@ -79,7 +80,9 @@ export default function Detail() {
                 Contact
               </Button>
             </Box>
-            {/* <ApiMap venues={venues} /> */}
+            <Box>
+              <Image src={mapImage} alt="map" width="480" height="226"/>
+            </Box>
           </Container>
           <Container>
             <Typography>Event history at this Venue:</Typography>
