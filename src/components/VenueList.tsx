@@ -16,7 +16,7 @@ export const VenueList = ({ venues }: Props) => {
     <Box>
       <Container maxWidth="sm">
         <div>
-          {venues.map((venue) => {
+          {venues.map((venue: any) => {
             return (
               <div key={venue.id} className="my-3">
                 <Card>
@@ -34,13 +34,13 @@ export const VenueList = ({ venues }: Props) => {
 
                       <div className="flex">
                         <Typography sx={{ width: 80 }}>Place type:</Typography>
-                        {venue.placeType.map((type, index) => {
+                        {venue.placeType.map((type: any, index: number) => {
                           return <Chip key={index} label={type} />;
                         })}
                       </div>
                       <div className="flex">
                         <Typography sx={{ width: 80 }}>Events type:</Typography>
-                        {venue.eventsType.map((type, index) => {
+                        {venue.eventsType.map((type: any, index: number) => {
                           return <Chip key={index} label={type} />;
                         })}
                       </div>
